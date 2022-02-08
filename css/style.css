@@ -1,0 +1,130 @@
+/* Reset browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default font */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Rule to remove styles from all links */
+a {
+    text-decoration: none;
+}
+
+
+/* Header styles */
+
+.header {
+    background-color: black;
+	position: sticky;
+    height: 60px;
+	top: 0px;
+    color: white;
+    font-size: 15px;
+}
+
+.header__logo {
+    height: 60px;
+}
+
+.header__title {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.header__nav {
+    position: absolute;
+    top: 12.5px;
+    right: 20px;
+}
+
+.header__nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.header__nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* End Header styles */
+
+/* main styles */
+
+.homeSection {
+    background-image: url("../assets/images/subestation.jpeg");
+    height: 600px;
+    background-position: right top;
+    background-repeat: no-repeat;         
+}
+
+.homeSection__container {
+    padding: 50px 30px;
+	margin-bottom:50px;
+    width: 500px;
+}
+
+.homeSection__title {
+    padding: 20px;
+	margin-bottom:40px;
+}
+
+/*end main styles */
+
+/* Footer styles */
+
+.footer {
+    background-color: #272727;
+    color: white;
+    font-size: 15px;
+    height: 250px;
+}
+
+.footer__title {
+    font-size: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer__socialNetworks {
+    display:inline-block;
+    position: absolute;
+    left: 60px
+}
+
+.footer__socialNetworks ul li {
+    display: block;
+}
+
+.footer__socialNetworks ul li a {
+    text-decoration: none;
+    color: white;
+    height: 70px;
+}
+
+.footer__socialNetworks ul li p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1ex;
+}
+
+.footer__socialNetworks ul li img {
+    vertical-align: middle;
+}
+
+.footer__address {
+    display:inline-block;
+    position: absolute;
+    right: 100px;
+}
+
+/* End Footer styles */
