@@ -17,15 +17,19 @@
 <body>
     <!-- Logo + Navigation bar -->
     <header class="header">
-        <img src="./assets/icons/rayo.svg" alt="Home page logo" class="header__logo">
-        <h3 class="header__title">POWER ENGINEERS</h3>
+        <div>
+            <a href="./index.html">
+                <img src="./assets/icons/rayo.svg" alt="Home page logo" class="header__logo">
+                <h3 class="header__title">Power Engineers</h3>
+            </a>
+        </div>
         <nav class="header__nav">
             <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./pages/services.html">SERVICES</a></li>
-                <li><a href="./pages/projects.html">PROJECTS</a></li>
-                <li><a href="./pages/about.html">ABOUT</a></li>
-                <li><a href="./pages/contact.html">CONTACT US</a></li>
+                <!-- <li><a href="./index.html">HOME</a></li>  Home in logo -->
+                <li><a href="./pages/services.html">Services</a></li>
+                <li><a href="./pages/projects.html">Projects</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -45,16 +49,22 @@
                 </div>
             </div>
         </section>
+        <section>
+            <h4>Where foresight meets follow through. Power Engineers is a leading, global consulting, engineering and construction management firm that provides environmentally focused and digitally powered solutions across in the Power & Utilities markets.</h4>
+            <img src="./assets/images/eolic-windmill.jpg" alt="Eolic windmill" height="800">
+        </section>
 
     </main>
     <!-- End Main -->
     
     <!-- Footer -->
     <footer class="footer">
-        <h3 class="footer__title">CONNECT WITH US</h3>
+        <h3 class="footer__title">Connect with us</h3>
 
         <section class="footer__socialNetworks">
-            <p>Social Media</p>
+            <div>
+                <p>Social Media</p>
+            </div>
             <ul>
                 <li>
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
@@ -94,8 +104,11 @@
             <p>21550 Oxnard Street Suite 720, Woodland Hills, CA 91367</p>
             <p>818-975-0010</p>
             <a href="mailto:info@powerengineers.com">info@powerengineers.com</a>
-            <br>
-            <a href="./pages/contact.html">Contact Us</a>
+            <div>
+                <a href="./pages/contact.html">
+                    <button class="squareButton">Contact Us</button>
+                </a>
+            </div>
         </section>
         
     </footer>

@@ -15,7 +15,6 @@ a {
     text-decoration: none;
 }
 
-
 /* Header styles */
 
 .header {
@@ -38,6 +37,8 @@ a {
     font-size: 20px;
     padding: 10px;
     font-weight: bold;
+    text-transform: uppercase;
+    color: white;
 }
 
 .header__nav {
@@ -54,31 +55,10 @@ a {
 .header__nav ul li a {
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
 }
 
 /* End Header styles */
-
-/* main styles */
-
-.homeSection {
-    background-image: url("../assets/images/subestation.jpeg");
-    height: 600px;
-    background-position: right top;
-    background-repeat: no-repeat;         
-}
-
-.homeSection__container {
-    padding: 50px 30px;
-	margin-bottom:50px;
-    width: 500px;
-}
-
-.homeSection__title {
-    padding: 20px;
-	margin-bottom:40px;
-}
-
-/*end main styles */
 
 /* Footer styles */
 
@@ -90,15 +70,21 @@ a {
 }
 
 .footer__title {
-    font-size: 15px;
-    padding: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .footer__socialNetworks {
     display:inline-block;
     position: absolute;
     left: 60px
+}
+
+.footer__socialNetworks div p {
+    font-size: 20px;
 }
 
 .footer__socialNetworks ul li {
@@ -127,4 +113,128 @@ a {
     right: 100px;
 }
 
+.footer__address a {
+    color: white;
+}
+
 /* End Footer styles */
+
+/* General Styles*/
+
+.squareButton {
+    padding: 0.8em 1.8em;
+    border: 2px solid #C4C4C4;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #C4C4C4;
+    margin-top: 10px;
+}
+
+.squareButton::before {
+    content: '';
+    width: 0;
+    height: 500%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #C4C4C4;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.squareButton:hover::before {
+    width: 105%;
+}
+
+.squareButton:hover {
+    color: #272727;
+}
+
+/* End General Styles*/
+
+/* Home styles */
+
+.homeSection {
+    background-image: url("../assets/images/subestation.jpeg");
+    height: 600px;
+    background-position: right top;
+    background-repeat: no-repeat;         
+}
+
+.homeSection__container {
+    padding: 50px 30px;
+	margin-bottom:50px;
+    width: 500px;
+}
+
+.homeSection__title {
+    padding: 20px;
+	margin-bottom:40px;
+}
+
+.homeSection__title h1 {
+    font-size: 60px;
+}
+
+.homeSection__title h2 {
+    font-size: 40px;
+}
+
+.homeSection__title p {
+    font-size: 16px;
+}
+
+/*End Home styles */
+
+/* Contact Us Styles */
+
+#titleContact {
+    text-align: center;
+    margin: 40px;
+}
+
+#titleContact h1 {
+    font-size: 40px;
+}
+
+#titleContact p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.formContact {
+    margin: 50px;
+}
+
+.formContact div label{
+    display:block;
+}
+
+
+.squareButton--form {
+    /*Modifiers*/
+    border: 2px solid #272727;
+    color: #272727;
+}
+
+.squareButton--form:hover {
+    /*Modifiers*/
+    color: white;
+}
+
+.squareButton--form::before {
+    /*Modifiers*/
+    background: #272727;
+}
+
+/* End Contact Us Styles */

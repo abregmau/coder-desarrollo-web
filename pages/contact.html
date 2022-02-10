@@ -18,15 +18,19 @@
 
     <!-- Logo + Navigation bar -->
     <header class="header">
-        <img src="../assets/icons/rayo.svg" alt="Home page logo" class="header__logo">
-        <h3 class="header__title">POWER ENGINEERS</h3>
+        <div>
+            <a href="../index.html">
+                <img src="../assets/icons/rayo.svg" alt="Home page logo" class="header__logo">
+                <h3 class="header__title">Power Engineers</h3>
+            </a>
+        </div>
         <nav class="header__nav">
             <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./services.html">SERVICES</a></li>
-                <li><a href="./projects.html">PROJECTS</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./contact.html">CONTACT US</a></li>
+                <!-- <li><a href="../index.html">Home</a></li>  Home in logo -->
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +38,7 @@
 
 
     <!-- Site Information -->
-    <section>
+    <section id="titleContact">
         <h1>Contact Us</h1>
         <p>Have a question or comment for us? We would love to hear from you.</p>
     </section>
@@ -42,32 +46,39 @@
     <!-- Contact Form -->
     <section>
         <article>
-            <form action="#" method="" enctype="">
+            <form class="formContact" action="#" method="" enctype="">
 
-                <label for="firstName">First Name:</label>
-                <input type="text" name="firstName" id="firstName"><br>
-
-                <label for="lastName">Last Name:</label>
-                <input type="text" name="lastName" id="lastName"><br>
-
-                <label for="company">Company:</label>
-                <input type="text" name="company" id="company"><br>
-        
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email"><br>
-
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="number" name="phoneNumber" id="phoneNumber"><br>
-
-                <label for="message">Message:<br>
-					<textarea placeholder="Write your message"></textarea>
-				</label><br>
-        
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <div>
+                    <label for="company">Company:</label>
+                    <input type="text" name="company" id="company">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="number" name="phoneNumber" id="phoneNumber">
+                </div>
+                <div>
+                    <label for="message">Message:<br>
+                        <textarea placeholder="Write your message"></textarea>
+                    </label>
+                </div>
+                
                 <input type="checkbox" name="aceptar" id="aceptar">
                 <label for="aceptar">Do you want to receive information about us?</label><br>
 
-                <button type="submit">Send</button>
-                <button type="reset">Clear</button>
+                <button class="squareButton squareButton--form" type="submit">Send</button>
+                <button class="squareButton squareButton--form" type="reset">Clear</button>
                 
             </form>
 		</article>
@@ -76,10 +87,12 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <h3 class="footer__title">CONNECT WITH US</h3>
+        <h3 class="footer__title">Connect with us</h3>
 
         <section class="footer__socialNetworks">
-            <p>Social Media</p>
+            <div>
+                <p>Social Media</p>
+            </div>
             <ul>
                 <li>
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
@@ -119,8 +132,11 @@
             <p>21550 Oxnard Street Suite 720, Woodland Hills, CA 91367</p>
             <p>818-975-0010</p>
             <a href="mailto:info@powerengineers.com">info@powerengineers.com</a>
-            <br>
-            <a href="./contact.html">Contact Us</a>
+            <div>
+                <a href="./contact.html">
+                    <button class="squareButton">Contact Us</button>
+                </a>
+            </div>
         </section>
         
     </footer>

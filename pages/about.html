@@ -18,15 +18,19 @@
 
     <!-- Logo + Navigation bar -->
     <header class="header">
-        <img src="../assets/icons/rayo.svg" alt="Home page logo" class="header__logo">
-        <h3 class="header__title">POWER ENGINEERS</h3>
+        <div>
+            <a href="../index.html">
+                <img src="../assets/icons/rayo.svg" alt="Home page logo" class="header__logo">
+                <h3 class="header__title">Power Engineers</h3>
+            </a>
+        </div>
         <nav class="header__nav">
             <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./services.html">SERVICES</a></li>
-                <li><a href="./projects.html">PROJECTS</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./contact.html">CONTACT US</a></li>
+                <!-- <li><a href="../index.html">Home</a></li>  Home in logo -->
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -37,8 +41,13 @@
         <section>
             <h1>Who We Are</h1>
             <p>Our name says it all: We’re nuts-and-bolts engineers, scientists and consultants who team together to create integrated, multidiscipline solutions.</p>
+            <img src="../assets/images/photo-city.jfif" alt="Woodland Hills City">
         </section>
-
+        
+        <section>
+            <h2>How we work</h2>
+        </section>
+        
         <section>
             <h2>Deeper Bench</h2>
             <p>We're specialists, not generalists. We combine our core competencies with a culture of multidiscipline teamwork to bring a diversity of knowledge and experience to your project. Here’s how we stack up:</p>
@@ -65,10 +74,12 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <h3 class="footer__title">CONNECT WITH US</h3>
+        <h3 class="footer__title">Connect with us</h3>
 
         <section class="footer__socialNetworks">
-            <p>Social Media</p>
+            <div>
+                <p>Social Media</p>
+            </div>
             <ul>
                 <li>
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
@@ -108,8 +119,11 @@
             <p>21550 Oxnard Street Suite 720, Woodland Hills, CA 91367</p>
             <p>818-975-0010</p>
             <a href="mailto:info@powerengineers.com">info@powerengineers.com</a>
-            <br>
-            <a href="./contact.html">Contact Us</a>
+            <div>
+                <a href="./contact.html">
+                    <button class="squareButton">Contact Us</button>
+                </a>
+            </div>
         </section>
         
     </footer>
