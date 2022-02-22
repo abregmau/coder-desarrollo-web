@@ -15,13 +15,12 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <!-- Logo + Navigation bar -->
     <header class="header">
-        <div>
+        <div class="header__home">
             <a href="../index.html">
-                <img src="../assets/icons/rayo.svg" alt="Home page logo" class="header__logo">
-                <h3 class="header__title">Power Engineers</h3>
+                <img class="header__home--logo" src="../assets/icons/rayo.svg" alt="Home page logo">
+                <h3 class="header__home--title">Power Engineers</h3>
             </a>
         </div>
         <nav class="header__nav">
@@ -47,31 +46,32 @@
     <section>
         <article>
             <form class="formContact" action="#" method="" enctype="">
-
-                <div>
-                    <label for="firstName">First Name:</label>
-                    <input type="text" name="firstName" id="firstName">
-                </div>
-                <div>
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" id="lastName">
-                </div>
-                <div>
-                    <label for="company">Company:</label>
-                    <input type="text" name="company" id="company">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="number" name="phoneNumber" id="phoneNumber">
-                </div>
-                <div>
-                    <label for="message">Message:<br>
-                        <textarea placeholder="Write your message"></textarea>
-                    </label>
+                <div class="formContact__labels">
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div>
+                        <label for="company">Company:</label>
+                        <input type="text" name="company" id="company">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="number" name="phoneNumber" id="phoneNumber">
+                    </div>
+                    <div>
+                        <label for="message">Message:<br>
+                            <textarea placeholder="Write your message"></textarea>
+                        </label>
+                    </div>
                 </div>
                 
                 <input type="checkbox" name="aceptar" id="aceptar">

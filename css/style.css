@@ -19,21 +19,30 @@ a {
 
 .header {
     background-color: black;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 	position: sticky;
     height: 60px;
 	top: 0px;
     color: white;
     font-size: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0;
+    padding: 0 30px;
 }
 
-.header__logo {
+.header__home a {
+    display: flex;
+    align-items: center;
+}
+
+.header__home--logo {
     height: 60px;
 }
 
-.header__title {
-    position: absolute;
-    top: 10px;
-    left: 70px;
+.header__home--title {
     font-size: 20px;
     padding: 10px;
     font-weight: bold;
@@ -41,14 +50,12 @@ a {
     color: white;
 }
 
-.header__nav {
-    position: absolute;
-    top: 12.5px;
-    right: 20px;
+.header__nav ul{
+    list-style-type: none;
+    display: flex;
 }
 
 .header__nav ul li {
-    display: inline-block;
     padding: 10px;
 }
 
@@ -67,6 +74,16 @@ a {
     color: white;
     font-size: 15px;
     height: 250px;
+
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "socialNetworks address"
+    "socialNetworks address"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    align-items: center;
 }
 
 .footer__title {
@@ -75,12 +92,13 @@ a {
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
+
+    grid-area: title;
 }
 
 .footer__socialNetworks {
-    display:inline-block;
-    position: absolute;
-    left: 60px
+    grid-area: socialNetworks;
+    margin: 50px;
 }
 
 .footer__socialNetworks div p {
@@ -108,9 +126,8 @@ a {
 }
 
 .footer__address {
-    display:inline-block;
-    position: absolute;
-    right: 100px;
+    grid-area: address;
+    margin: 50px;
 }
 
 .footer__address a {
@@ -164,37 +181,184 @@ a {
 
 /* Home styles */
 
-.homeSection {
-    background-image: url("../assets/images/subestation.jpeg");
-    height: 600px;
-    background-position: right top;
-    background-repeat: no-repeat;         
+.homeSection-1 {
+    background-image: url("../assets/images/eolic-windmill.jpg");
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    margin-bottom: 50px;
 }
 
-.homeSection__container {
-    padding: 50px 30px;
-	margin-bottom:50px;
-    width: 500px;
+.contents {
+    background-color: white;
+    padding: 40px;
 }
 
-.homeSection__title {
-    padding: 20px;
-	margin-bottom:40px;
-}
 
-.homeSection__title h1 {
+.contents__title {
     font-size: 60px;
+
 }
 
-.homeSection__title h2 {
+.contents__p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.homeSection-2 {
+    padding: 0 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.homeSection-3 {
+    padding: 0 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+
+/* End Home styles */
+
+/* Services styles*/
+
+.servSection-1 {
+    background-image: url("../assets/images/Our_Services_CREZ_Oncor_Tonkawa-Sweetwater_East.jpg");
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 0 80px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+}
+
+.servSection-2 {
+    padding: 0 80px;
+    margin-bottom: 50px;
+}
+
+.services {
+    padding: 0 80px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+/* End services styles*/
+
+/* Projects styles */
+
+.projSection-1 {
+    background-image: url("../assets/images/high-voltage-tower-2.jpg");
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 0 80px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.projSection-2 {
+    padding: 0 80px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.projSection-2__text {
+    padding: 0 80px;
+
+    display: grid;
+    align-content: space-around;
+}
+
+/* End Projects styles */
+
+/* About Styles */
+
+.aboutSection-1 {
+    background-image: url("../assets/images/photo-city.jfif");
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 0 80px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.titleAbout {
+    text-align: center;
+    margin: 40px;
     font-size: 40px;
 }
 
-.homeSection__title p {
-    font-size: 16px;
+.aboutSection-2 {
+    padding: 0 80px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
 }
 
-/*End Home styles */
+.aboutSection-2__container {
+    padding: 50px;
+}
+
+.aboutSection-2__title {
+    font-size: 25px;
+}
+
+.aboutSection-2__list {
+    list-style-type: square;
+}
+
+/* End About styles */
 
 /* Contact Us Styles */
 
@@ -216,7 +380,12 @@ a {
     margin: 50px;
 }
 
-.formContact div label{
+.formContact__labels {
+    display: grid;
+}
+
+
+.formContact div div label{
     display:block;
 }
 
