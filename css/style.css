@@ -111,23 +111,23 @@ a {
     font-size: 20px;
 }
 
-.footer__socialNetworks ul li {
+.footer__linkSocialNetworks {
     display: block;
 }
 
-.footer__socialNetworks ul li a {
+.footer__linkSocialNetworks a {
     text-decoration: none;
     color: white;
     height: 70px;
 }
 
-.footer__socialNetworks ul li p {
+.footer__linkSocialNetworks p {
     display: inline-block;
     vertical-align: middle;
     margin-left: 1ex;
 }
 
-.footer__socialNetworks ul li img {
+.footer__linkSocialNetworks img {
     vertical-align: middle;
 }
 
