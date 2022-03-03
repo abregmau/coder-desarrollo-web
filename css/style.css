@@ -39,42 +39,12 @@ a {
 
 /* Footer styles */
 
-.footer {
-    background-color: #272727;
-    color: white;
-    font-size: 15px;
-    height: 250px;
-
-    display: grid;
-    grid-template-areas: 
-    "title title"
-    "socialNetworks address"
-    "socialNetworks address"
-    ;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
-    align-items: center;
-
-}
-
-.footer__title {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    text-transform: uppercase;
-
-    grid-area: title;
-}
-
 .footer__socialNetworks {
-    grid-area: socialNetworks;
-    margin: 50px;
+    margin: 5px;
     display: grid;
 }
 
 .footer__socialNetworks div p {
-    font-size: 20px;
     margin: 0;
 }
 
@@ -99,8 +69,7 @@ a {
 }
 
 .footer__address {
-    grid-area: address;
-    margin: 50px;
+    margin: 5px;
     display: grid;
 }
 
@@ -359,7 +328,7 @@ a {
 
 #titleContact {
     text-align: center;
-    margin: 40px;
+    margin: 5px;
 }
 
 #titleContact h1 {
@@ -368,7 +337,7 @@ a {
 
 #titleContact p {
     font-size: 20px;
-    margin: 20px;
+    margin: 5px;
 }
 
 .squareButton--form {
@@ -483,23 +452,17 @@ a {
         padding: 0;
     }
 
-    .footer {
-        grid-template-areas: 
-        "title"
-        "socialNetworks"
-        "address"
-        ;
-        grid-template-columns: 1fr;
-        height: 500px;
-    }
-
-    .footer__title {
-        margin: 10px;
-    }
-
     .footer__socialNetworks {
         justify-content: space-around;
         margin: 10px;
+    }
+
+    .footer__containerSocialNetworks {
+        display: flex;
+    }
+
+    .footer__linkSocialNetworks a p{
+        display: none;
     }
 
     .footer__address {
