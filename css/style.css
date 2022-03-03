@@ -75,6 +75,7 @@ a {
 
 .footer__socialNetworks div p {
     font-size: 20px;
+    margin: 0;
 }
 
 .footer__linkSocialNetworks {
@@ -425,6 +426,11 @@ a {
         font-size: 16px;
     }
 
+    .navbar-toggler-icon--mod {
+        width: 25px;
+        height: 25px;
+    }
+
     .contents__title{
         font-size: 30px;
     }
@@ -505,14 +511,14 @@ a {
 
 /* End Small devices (portrait tablets and large phones, 600px and down) */
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 480px and down) */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .navbar--mod {
         padding: 0;
     }
 }
 
-/* End Extra small devices (phones, 600px and down) */
+/* End Extra small devices (phones, 480px and down) */
 
 /* End Medias Queries */
