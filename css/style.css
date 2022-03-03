@@ -50,6 +50,7 @@ a {
 
 .footer__linkSocialNetworks {
     display: block;
+    padding: 2px;
 }
 
 .footer__linkSocialNetworks a {
@@ -458,6 +459,10 @@ a {
 
     .footer__containerSocialNetworks {
         display: flex;
+    }
+
+    .footer__linkSocialNetworks {
+        padding: 5px;
     }
 
     .footer__linkSocialNetworks a p{
