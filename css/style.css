@@ -453,7 +453,6 @@ a {
     }
 
     .footer__socialNetworks {
-        justify-content: space-around;
         margin: 10px;
     }
 
@@ -466,7 +465,6 @@ a {
     }
 
     .footer__address {
-        justify-content: space-around;
         margin: 10px;
     }
 
