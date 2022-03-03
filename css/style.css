@@ -404,20 +404,6 @@ a {
     margin: 20px;
 }
 
-.formContact {
-    margin: 50px;
-}
-
-.formContact__labels {
-    display: grid;
-}
-
-
-.formContact div div label{
-    display:block;
-}
-
-
 .squareButton--form {
     /*Modifiers*/
     border: 2px solid #272727;
