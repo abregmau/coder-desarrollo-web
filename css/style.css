@@ -121,6 +121,11 @@ a {
     color: #272727;
 }
 
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
 /* End General Styles*/
 
 /* Home styles */
@@ -224,19 +229,30 @@ a {
 
 }
 
-.servSection-2 {
-    padding: 0 80px;
-    margin-bottom: 50px;
-}
-
 .services {
-    padding: 0 80px;
+    /* padding: 0 80px;
     margin-bottom: 50px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    align-items: center;
+    align-items: center; */
+
+}
+
+.services__images{
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.services__images img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.services__images img:hover {
+    transform: scale(1.3);
 }
 
 /* End services styles*/
