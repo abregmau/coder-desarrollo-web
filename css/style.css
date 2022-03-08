@@ -114,7 +114,7 @@ a {
 }
 
 .squareButton:hover::before {
-    width: 105%;
+    width: 150%;
 }
 
 .squareButton:hover {
@@ -126,14 +126,8 @@ a {
     margin: 0 auto;
 }
 
-/* End General Styles*/
-
-/* Home styles */
-
-.homeSection-1 {
-    background-image: url("../assets/images/eolic-windmill.jpg");
+.topPage {
     height: 100vh;
-    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -143,8 +137,15 @@ a {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-
     margin-bottom: 50px;
+}
+
+/* End General Styles*/
+
+/* Home styles */
+
+.topPage--home {
+    background-image: url("../assets/images/eolic-windmill.jpg");
 }
 
 .contents {
@@ -212,32 +213,8 @@ a {
 
 /* Services styles*/
 
-.servSection-1 {
+.topPage--services {
     background-image: url("../assets/images/Our_Services_CREZ_Oncor_Tonkawa-Sweetwater_East.jpg");
-    height: 100vh;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    padding: 0 80px;
-    margin-bottom: 50px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-
-}
-
-.services {
-    /* padding: 0 80px;
-    margin-bottom: 50px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center; */
-
 }
 
 .services__images{
@@ -259,20 +236,8 @@ a {
 
 /* Projects styles */
 
-.projSection-1 {
+.topPage--projects {
     background-image: url("../assets/images/high-voltage-tower-2.jpg");
-    height: 100vh;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    padding: 0 80px;
-    margin-bottom: 50px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
 }
 
 .projSection-2 {
@@ -295,20 +260,8 @@ a {
 
 /* About Styles */
 
-.aboutSection-1 {
+.topPage--about {
     background-image: url("../assets/images/photo-city.jfif");
-    height: 100vh;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    padding: 0 80px;
-    margin-bottom: 50px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
 }
 
 .titleAbout {
@@ -357,18 +310,18 @@ a {
     margin: 5px;
 }
 
-.squareButton--form {
+.squareButton--dark {
     /*Modifiers*/
     border: 2px solid #272727;
     color: #272727;
 }
 
-.squareButton--form:hover {
+.squareButton--dark:hover {
     /*Modifiers*/
     color: white;
 }
 
-.squareButton--form::before {
+.squareButton--dark::before {
     /*Modifiers*/
     background: #272727;
 }
@@ -450,9 +403,10 @@ a {
         cursor: pointer;
     }
 
-    .homeSection-1 {
+    .topPage {
         grid-template-columns: 1fr;
         margin-bottom: 10px;
+        background-attachment:fixed;
     }
 
     .homeSection-2 {
