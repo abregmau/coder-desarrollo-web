@@ -42,40 +42,41 @@ a {
 .footer__socialNetworks {
     margin: 5px;
     display: grid;
+
+    p {
+        margin: 0;
+    }
 }
 
-.footer__socialNetworks div p {
-    margin: 0;
-}
 
 .footer__linkSocialNetworks {
     display: block;
     padding: 2px;
-}
 
-.footer__linkSocialNetworks a {
-    text-decoration: none;
-    color: white;
-    height: 70px;
-}
-
-.footer__linkSocialNetworks p {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 1ex;
-}
-
-.footer__linkSocialNetworks img {
-    vertical-align: middle;
+    a {
+        text-decoration: none;
+        color: white;
+        height: 70px;
+    }
+    
+    p {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 1ex;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
 }
 
 .footer__address {
     margin: 5px;
     display: grid;
-}
 
-.footer__address a {
-    color: white;
+    a {
+        color: white;
+    }
 }
 
 /* End Footer styles */
@@ -220,16 +221,16 @@ a {
 .services__images{
     cursor: pointer;
     overflow: hidden;
-}
 
-.services__images img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s;
-}
-
-.services__images img:hover {
-    transform: scale(1.3);
+    img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+    }
+    
+    img:hover {
+        transform: scale(1.3);
+    }
 }
 
 /* End services styles*/
@@ -299,15 +300,15 @@ a {
 #titleContact {
     text-align: center;
     margin: 5px;
-}
 
-#titleContact h1 {
-    font-size: 40px;
-}
-
-#titleContact p {
-    font-size: 20px;
-    margin: 5px;
+    h1 {
+        font-size: 40px;
+    }
+    
+    p {
+        font-size: 20px;
+        margin: 5px;
+    }
 }
 
 .squareButton--dark {
@@ -433,10 +434,10 @@ a {
 
     .footer__linkSocialNetworks {
         padding: 5px;
-    }
 
-    .footer__linkSocialNetworks a p{
-        display: none;
+        a p{
+            display: none;
+        }
     }
 
     .footer__address {
