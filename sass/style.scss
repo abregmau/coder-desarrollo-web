@@ -98,28 +98,28 @@ a {
     font-family: inherit;
     color: #C4C4C4;
     margin-top: 10px;
-}
 
-.squareButton::before {
-    content: '';
-    width: 0;
-    height: 1000%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background: #C4C4C4;
-    transition: .5s ease;
-    display: block;
-    z-index: -1;
-}
-
-.squareButton:hover::before {
-    width: 150%;
-}
-
-.squareButton:hover {
-    color: #272727;
+    &::before {
+        content: '';
+        width: 0;
+        height: 1000%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: #C4C4C4;
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+    }
+    
+    &:hover::before {
+        width: 150%;
+    }
+    
+    &:hover {
+        color: #272727;
+    }
 }
 
 .col-center{
@@ -315,16 +315,16 @@ a {
     /*Modifiers*/
     border: 2px solid #272727;
     color: #272727;
-}
-
-.squareButton--dark:hover {
-    /*Modifiers*/
-    color: white;
-}
-
-.squareButton--dark::before {
-    /*Modifiers*/
-    background: #272727;
+    
+    &:hover {
+        /*Modifiers*/
+        color: white;
+    }
+    
+    &::before {
+        /*Modifiers*/
+        background: #272727;
+    }
 }
 
 /* End Contact Us Styles */
