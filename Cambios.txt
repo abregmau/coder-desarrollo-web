@@ -1,0 +1,1 @@
+Se utiliza @extend en la clase squareButton--dark (style.scss) y se aplica en about.index
