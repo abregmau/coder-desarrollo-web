@@ -3,31 +3,13 @@
 @import "./header";
 @import "./footer";
 
+@import "./projects";
+@import "./about";
+
 /* Home styles */
 
 .topPage--home {
     background-image: url("../assets/images/eolic-windmill.jpg");
-}
-
-.contents {
-    background-color: white;
-    padding: 40px;
-}
-
-
-.contents__title {
-    font-size: 60px;
-}
-
-.contents__p {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-.contents__img {
-    height: 400px;
-    cursor: pointer;
 }
 
 .homeSection-2 {
@@ -95,66 +77,6 @@
 
 /* End services styles*/
 
-/* Projects styles */
-
-.topPage--projects {
-    background-image: url("../assets/images/high-voltage-tower-2.jpg");
-}
-
-.projSection-2 {
-    padding: 0 80px;
-    margin-bottom: 50px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-}
-
-.projSection-2__text {
-    padding: 0 80px;
-
-    display: grid;
-    align-content: space-around;
-}
-
-/* End Projects styles */
-
-/* About Styles */
-
-.topPage--about {
-    background-image: url("../assets/images/photo-city.jfif");
-}
-
-.titleAbout {
-    text-align: center;
-    margin: 40px;
-    font-size: 40px;
-}
-
-.aboutSection-2 {
-    padding: 0 80px;
-    margin-bottom: 50px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-}
-
-.aboutSection-2__container {
-    padding: 50px;
-}
-
-.aboutSection-2__title {
-    font-size: 25px;
-}
-
-.aboutSection-2__list {
-    list-style-type: square;
-}
-
-/* End About styles */
-
 /* Contact Us Styles */
 
 #titleContact {
@@ -199,78 +121,15 @@
 
 /* Large devices (laptops/desktops, 992px and down) */
 
-@media (max-width: 992px) {
-    .contents__title{
-        font-size: 35px;
-    }
-
-    .contents__p{
-        font-size: 12px;
-    }
-
-    .contents__img {
-        height: 270px;
-        cursor: pointer;
-    }
-}
-
 /* End Large devices (laptops/desktops, 992px and down) */
 
 /* Medium devices (landscape tablets, 768px and down) */
-
-@media (max-width: 768px) {
-
-    .navbar__home--logo {
-        height: 40px;
-    }
-
-    .navbar__home--title {
-        font-size: 16px;
-    }
-
-    .navbar-toggler-icon--mod {
-        width: 25px;
-        height: 25px;
-    }
-
-    .contents__title{
-        font-size: 30px;
-    }
-
-    .contents__p{
-        font-size: 10px;
-    }
-
-    .contents__img {
-        height: 230px;
-        cursor: pointer;
-    }
-}
 
 /* End Medium devices (landscape tablets, 768px and down) */
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
 
 @media (max-width: 600px) {
-    .contents__title{
-        font-size: 35px;
-    }
-
-    .contents__p{
-        font-size: 12px;
-    }
-
-    .contents__img {
-        height: auto;
-        width: 100vw;
-        cursor: pointer;
-    }
-
-    .topPage {
-        grid-template-columns: 1fr;
-        margin-bottom: 10px;
-        background-attachment:fixed;
-    }
 
     .homeSection-2 {
         grid-template-columns: 1fr;
@@ -291,12 +150,6 @@
 /* End Small devices (portrait tablets and large phones, 600px and down) */
 
 /* Extra small devices (phones, 480px and down) */
-
-@media (max-width: 480px) {
-    .navbar--mod {
-        padding: 0;
-    }
-}
 
 /* End Extra small devices (phones, 480px and down) */
 

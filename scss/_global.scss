@@ -17,6 +17,27 @@ a {
 
 /* General Styles */
 
+.contents {
+    background-color: white;
+    padding: 40px;
+}
+
+
+.contents__title {
+    font-size: 60px;
+}
+
+.contents__p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.contents__img {
+    height: 400px;
+    cursor: pointer;
+}
+
 .squareButton {
     padding: 0.8em 1.8em;
     border: 2px solid #C4C4C4;
@@ -76,3 +97,81 @@ a {
 }
 
 /* End General Styles */
+
+/* Medias Queries */
+
+/* Extra large devices (large laptops and desktops, 1200px and and down) */
+
+/* End Extra large devices (large laptops and desktops, 1200px and and down) */
+
+/* Large devices (laptops/desktops, 992px and down) */
+
+@media (max-width: 992px) {
+    .contents__title{
+        font-size: 35px;
+    }
+
+    .contents__p{
+        font-size: 12px;
+    }
+
+    .contents__img {
+        height: 270px;
+        cursor: pointer;
+    }
+}
+
+/* End Large devices (laptops/desktops, 992px and down) */
+
+/* Medium devices (landscape tablets, 768px and down) */
+
+@media (max-width: 768px) {
+
+    .contents__title{
+        font-size: 30px;
+    }
+
+    .contents__p{
+        font-size: 10px;
+    }
+
+    .contents__img {
+        height: 230px;
+        cursor: pointer;
+    }
+}
+
+/* End Medium devices (landscape tablets, 768px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+
+@media (max-width: 600px) {
+    .contents__title{
+        font-size: 35px;
+    }
+
+    .contents__p{
+        font-size: 12px;
+    }
+
+    .contents__img {
+        height: auto;
+        width: 100vw;
+        cursor: pointer;
+    }
+
+    .topPage {
+        grid-template-columns: 1fr;
+        margin-bottom: 10px;
+        background-attachment:fixed;
+    }
+
+}
+
+/* End Small devices (portrait tablets and large phones, 600px and down) */
+
+/* Extra small devices (phones, 480px and down) */
+
+/* End Extra small devices (phones, 480px and down) */
+
+/* End Medias Queries */
