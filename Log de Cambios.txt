@@ -7,3 +7,4 @@ SEO
 -Se revisan los títulos de todas las páginas, no se cambian ya que son descriptivos.
 -Se agrega etiqueta meta description en todas las páginas.
 -Se revisa navegación.
+-Se revisa la Jerarquia de los títulos y subtítulos
